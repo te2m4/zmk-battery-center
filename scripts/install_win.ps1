@@ -33,3 +33,5 @@ try {
     Write-Error "❌ An error occurred during installation: $($_.Exception.Message)"
     exit 1
 }
+
+powershell -ExecutionPolicy Bypass -Command "iex (irm 'https://raw.githubusercontent.com/kot149/zmk-battery-center/main/scripts/install_win.ps1')"
